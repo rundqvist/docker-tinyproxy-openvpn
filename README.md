@@ -2,6 +2,8 @@
 A small container for proxying http(s)-traffic through vpn.
 https://hub.docker.com/r/rundqvist/openvpn-tinyproxy/
 
+[![Docker pulls](https://img.shields.io/docker/pulls/rundqvist/openvpn-tinyproxy.svg)](https://hub.docker.com/r/rundqvist/openvpn-tinyproxy)
+
 # Appreciate my work?
 Do you find this container useful? Please consider a donation.
 
