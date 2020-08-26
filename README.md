@@ -49,9 +49,11 @@ See base image for vpn configuration: https://hub.docker.com/r/rundqvist/openvpn
 | Variable | Usage |
 |----------|-------|
 | _PORT_ | Port for access to tinyproxy |
-| _NETWORK_ | Your private network IP (example 192.168.0.0). |
+| _NETWORK_ | Your private network IP (example 192.168.0.0). Set to 'ignore' if you intend to omit this. |
 
 _Cursive_ variables are mandatory.
+
+If you use 'ignore' on NETWORK (and not going to use tinyproxy), you probably want base image instead (https://hub.docker.com/r/rundqvist/openvpn).
 
 ## Setup
 Configure your client to use [your docker host ip]:[PORT] as proxy.
