@@ -4,7 +4,7 @@ https://hub.docker.com/r/rundqvist/openvpn-tinyproxy/
 
 [![Docker pulls](https://img.shields.io/docker/pulls/rundqvist/openvpn-tinyproxy.svg)](https://hub.docker.com/r/rundqvist/openvpn-tinyproxy)
 
-# Do you find this container useful? 
+## Do you find this container useful? 
 Please support the development by making a small donation.
 
 [![Support](https://img.shields.io/badge/support-Flattr-brightgreen)](https://flattr.com/@rundqvist)
