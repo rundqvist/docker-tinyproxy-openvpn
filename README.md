@@ -79,7 +79,7 @@ Variables in _cursive_ is mandatory.
 | /cache/ | Used for caching original configuration files from vpn provider |
 
 ## Setup
-Configure your client to use [your docker host ip]:[PORT] as proxy.
+Configure your client to use `HOST_IP`:`PORT` as proxy.
 
 ## Issues
 Please report issues at https://github.com/rundqvist/docker-openvpn-tinyproxy/issues
