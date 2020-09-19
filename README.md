@@ -16,8 +16,8 @@ Please support the development by making a small donation.
 ## Features
 * Killswitch (kills network if vpn is down)
 * Proxies all http(s)-traffic through vpn
+* Self healing (restarts vpn if connection breaks down)
 * Connect to random server
-* Reconnects if connection breaks
 * Healthcheck (checking that ip differs from public ip)
 
 ## Requirements
