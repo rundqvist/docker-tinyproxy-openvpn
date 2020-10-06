@@ -1,10 +1,10 @@
 # Docker OpenVPN container with Tinyproxy
 A user friendly container for proxying http(s)-traffic through vpn.
 
-[![Docker pulls](https://img.shields.io/docker/pulls/rundqvist/openvpn-tinyproxy.svg)](https://hub.docker.com/r/rundqvist/openvpn-tinyproxy)
-[![image size](https://img.shields.io/docker/image-size/rundqvist/openvpn-tinyproxy.svg)](https://hub.docker.com/r/rundqvist/openvpn-tinyproxy)
-[![commit activity](https://img.shields.io/github/commit-activity/m/rundqvist/docker-openvpn-tinyproxy)](https://github.com/rundqvist/docker-openvpn-tinyproxy)
-[![last commit](https://img.shields.io/github/last-commit/rundqvist/docker-openvpn-tinyproxy.svg)](https://github.com/rundqvist/docker-openvpn-tinyproxy)
+[![Docker pulls](https://img.shields.io/docker/pulls/rundqvist/tinyproxy-openvpn.svg)](https://hub.docker.com/r/rundqvist/tinyproxy-openvpn)
+[![image size](https://img.shields.io/docker/image-size/rundqvist/tinyproxy-openvpn.svg)](https://hub.docker.com/r/rundqvist/tinyproxy-openvpn)
+[![commit activity](https://img.shields.io/github/commit-activity/m/rundqvist/docker-tinyproxy-openvpn)](https://github.com/rundqvist/docker-tinyproxy-openvpn)
+[![last commit](https://img.shields.io/github/last-commit/rundqvist/docker-tinyproxy-openvpn.svg)](https://github.com/rundqvist/docker-tinyproxy-openvpn)
 
 ## Do you find this container useful? 
 Please support the development by making a small donation.
@@ -39,7 +39,7 @@ $ sudo docker run \
     -d \
     --cap-add=NET_ADMIN \
     --device=/dev/net/tun \
-    --name=openvpn-tinyproxy \
+    --name=tinyproxy-openvpn \
     --dns 1.1.1.1 \
     --dns 1.0.0.1 \
     -p [PORT]:8888 \
@@ -49,7 +49,7 @@ $ sudo docker run \
     -e 'VPN_PASSWORD=[your vpn password]' \
     -e 'VPN_COUNTRY=[your desired country]' \
     -v /path/to/cache/folder:/cache/ \
-    rundqvist/openvpn-tinyproxy
+    rundqvist/tinyproxy-openvpn
 ```
 
 ### Configuration
@@ -82,4 +82,4 @@ Variables in _cursive_ is mandatory.
 Configure your client to use `HOST_IP`:`PORT` as proxy.
 
 ## Issues
-Please report issues at https://github.com/rundqvist/docker-openvpn-tinyproxy/issues
+Please report issues at https://github.com/rundqvist/docker-tinyproxy-openvpn/issues
