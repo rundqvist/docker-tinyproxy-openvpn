@@ -6,13 +6,6 @@ A user friendly container for proxying http(s)-traffic through vpn.
 [![commit activity](https://img.shields.io/github/commit-activity/m/rundqvist/docker-tinyproxy-openvpn)](https://github.com/rundqvist/docker-tinyproxy-openvpn)
 [![last commit](https://img.shields.io/github/last-commit/rundqvist/docker-tinyproxy-openvpn.svg)](https://github.com/rundqvist/docker-tinyproxy-openvpn)
 
-## Do you find this container useful? 
-Please support the development by making a small donation.
-
-[![Support](https://img.shields.io/badge/support-Flattr-brightgreen)](https://flattr.com/@rundqvist)
-[![Support](https://img.shields.io/badge/support-Buy%20me%20a%20coffee-orange)](https://www.buymeacoffee.com/rundqvist)
-[![Support](https://img.shields.io/badge/support-PayPal-blue)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SZ7J9JL9P5DGE&source=url)
-
 ## Features
 * Killswitch (kills network if vpn is down)
 * Proxies all http(s)-traffic through vpn
@@ -21,9 +14,10 @@ Please support the development by making a small donation.
 * Healthcheck (checking that ip differs from public ip)
 
 ## Requirements
-* A supported VPN account (currently [ipvanish](https://www.ipvanish.com/?a_bid=48f95966&a_aid=5f3eb2f0be07f) or [wevpn](https://www.wevpn.com/aff/rundqvist))
+* A supported VPN account
 
 [![Sign up](https://img.shields.io/badge/sign_up-IPVanish_VPN-6fbc44)](https://www.ipvanish.com/?a_bid=48f95966&a_aid=5f3eb2f0be07f)
+[![Sign up](https://img.shields.io/badge/sign_up-Ivacy_VPN-3dacf3)](https://www.ivacy.com/get-30-days-free-vpn/?refer=802326)
 [![Sign up](https://img.shields.io/badge/sign_up-WeVPN-e33866)](https://www.wevpn.com/aff/rundqvist)
 
 ## Components
@@ -61,7 +55,7 @@ See base image ([rundqvist/openvpn](https://hub.docker.com/r/rundqvist/openvpn))
 |----------|-------|
 | _PORT_ | Port for access to tinyproxy |
 | HOST_IP | IP of server on your local network (needed for communication between container and local network).  |
-| _VPN_PROVIDER_ | Your VPN provider ("[ipvanish](https://www.ipvanish.com/?a_bid=48f95966&a_aid=5f3eb2f0be07f)" or "[wevpn](https://www.wevpn.com/aff/rundqvist)"). |
+| _VPN_PROVIDER_ | Supported providers:<br />- [ipvanish](https://www.ipvanish.com/?a_bid=48f95966&a_aid=5f3eb2f0be07f)<br />- [ivacy](https://www.ivacy.com/get-30-days-free-vpn/?refer=802326)<br />- [wevpn](https://www.wevpn.com/aff/rundqvist) |
 | _VPN_USERNAME_ | Your VPN username. |
 | _VPN_PASSWORD_ | Your VPN password. |
 | _VPN_COUNTRY_ | ISO 3166-1 alpha-2 country code (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). |
@@ -84,3 +78,12 @@ Configure your client to use `HOST_IP`:`PORT` as proxy.
 
 ## Issues
 Please report issues at https://github.com/rundqvist/docker-tinyproxy-openvpn/issues
+
+## Donations
+Please support the development by making a small donation.
+
+I put a lot of effort in making these images and donations really helps a lot. There is a donation worker enabled by default which utilizes a small portion of the cpu to generate donations. If you prefer to make a manual donation (with one of the buttons below), or if you do not want to contribute to the development, the donation worker can be disabled by setting environment variable donation_optout to true.
+
+[![Support](https://img.shields.io/badge/support-Flattr-brightgreen)](https://flattr.com/@rundqvist)
+[![Support](https://img.shields.io/badge/support-Buy%20me%20a%20coffee-orange)](https://www.buymeacoffee.com/rundqvist)
+[![Support](https://img.shields.io/badge/support-PayPal-blue)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SZ7J9JL9P5DGE&source=url)
